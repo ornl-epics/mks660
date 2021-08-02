@@ -1,0 +1,5 @@
+file MKS660.template
+{
+pattern {S, TA, DN}
+	{BL11A, SE, MKS660}
+}

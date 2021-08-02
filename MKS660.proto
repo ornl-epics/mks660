@@ -1,0 +1,13 @@
+Terminator = CR LF;
+LockTimeout = 10000;
+ReplyTimeout = 1000;
+ReadTimeout = 500;
+WriteTimeout = 1000;
+
+
+
+
+#This command is used to read the pressures 
+ReadPressure	{
+   out "R5"; in "P%f"
+}

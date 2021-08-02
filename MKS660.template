@@ -1,0 +1,53 @@
+#Get the pressure reading for the first sensor
+record(ai, "$(S):$(TA):$(DN):Pressure1")
+{
+	field(DESC, "MKS660 Pressure1")
+	field(DTYP, "stream")
+	field(INP, "@MKS660.proto ReadPressure MKS660One")
+	info(archive, "monitor, 00:01:00")
+	field(EGU,"mBar")
+	field(PREC,"3")
+	field(MDEL,"0.001")
+	field(ADEL,"0.002")
+	field(SCAN, "1 second")
+}
+
+record(ai, "$(S):$(TA):$(DN):Pressure2")
+{
+        field(DESC, "MKS660 Pressure2")
+        field(DTYP, "stream")
+        field(INP, "@MKS660.proto ReadPressure MKS660Two")
+        info(archive, "monitor, 00:01:00")
+        field(EGU,"Bar")
+        field(PREC,"3")
+        field(MDEL,"0.001")
+        field(ADEL,"0.002")
+        field(SCAN, "1 second")
+}
+
+record(ai, "$(S):$(TA):$(DN):Pressure3")
+{
+        field(DESC, "MKS660 Pressure3")
+        field(DTYP, "stream")
+        field(INP, "@MKS660.proto ReadPressure MKS660Three")
+        info(archive, "monitor, 00:01:00")
+        field(EGU,"mBar")
+        field(PREC,"3")
+        field(MDEL,"0.001")
+        field(ADEL,"0.002")
+        field(SCAN, "1 second")
+}
+
+record(ai, "$(S):$(TA):$(DN):Pressure4")
+{
+        field(DESC, "MKS660 Pressure4")
+        field(DTYP, "stream")
+        field(INP, "@MKS660.proto ReadPressure MKS660Four")
+        info(archive, "monitor, 00:01:00")
+        field(EGU,"Bar")
+        field(PREC,"3")
+        field(MDEL,"0.001")
+        field(ADEL,"0.002")
+        field(SCAN, "1 second")
+}
+
